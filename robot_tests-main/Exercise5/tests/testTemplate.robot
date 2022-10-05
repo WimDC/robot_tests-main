@@ -40,4 +40,4 @@ Vierde test case
     Click Element    css:.fa.fa-2x.fa-sign-in
     Click Element    css:.icon-2x.icon-signout
     Element Should Contain    css:div[class='example']    Login Page
-    Sleep  1s
+    Sleep  2s
