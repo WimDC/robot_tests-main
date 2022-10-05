@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221005 19:23:40.737" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Exercise5\tests">
+<suite id="s1-s1" name="testTemplate" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Exercise5\tests\testTemplate.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221005 19:23:41.067" level="INFO">Opening browser 'Google Chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<status status="PASS" starttime="20221005 19:23:41.067" endtime="20221005 19:23:44.029"/>
+</kw>
+<status status="PASS" starttime="20221005 19:23:41.067" endtime="20221005 19:23:44.029"/>
+</kw>
+<test id="s1-s1-t1" name="Eerste test case" line="11">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221005 19:23:44.031" endtime="20221005 19:23:44.053"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:44.053" level="INFO">Typing text 'tomsmith' into text field 'css:#username'.</msg>
+<status status="PASS" starttime="20221005 19:23:44.053" endtime="20221005 19:23:44.159"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#password</arg>
+<arg>incorrectPassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:44.159" level="INFO">Typing text 'incorrectPassword' into text field 'css:#password'.</msg>
+<status status="PASS" starttime="20221005 19:23:44.159" endtime="20221005 19:23:44.233"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.fa.fa-2x.fa-sign-in</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:44.234" level="INFO">Clicking element 'css:.fa.fa-2x.fa-sign-in'.</msg>
+<status status="PASS" starttime="20221005 19:23:44.233" endtime="20221005 19:23:44.526"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#flash</arg>
+<arg>Your password is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221005 19:23:44.547" level="INFO">Element 'css:#flash' contains text 'Your password is invalid!'.</msg>
+<status status="PASS" starttime="20221005 19:23:44.526" endtime="20221005 19:23:44.548"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 19:23:45.550" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 19:23:44.548" endtime="20221005 19:23:45.550"/>
+</kw>
+<status status="PASS" starttime="20221005 19:23:44.030" endtime="20221005 19:23:45.550"/>
+</test>
+<test id="s1-s1-t2" name="Tweede test case" line="19">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221005 19:23:45.550" endtime="20221005 19:23:45.570"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<arg>tom</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:45.570" level="INFO">Typing text 'tom' into text field 'css:#username'.</msg>
+<status status="PASS" starttime="20221005 19:23:45.570" endtime="20221005 19:23:45.638"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#password</arg>
+<arg>incorrectPassword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:45.639" level="INFO">Typing text 'incorrectPassword' into text field 'css:#password'.</msg>
+<status status="PASS" starttime="20221005 19:23:45.639" endtime="20221005 19:23:45.724"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.fa.fa-2x.fa-sign-in</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:45.725" level="INFO">Clicking element 'css:.fa.fa-2x.fa-sign-in'.</msg>
+<status status="PASS" starttime="20221005 19:23:45.725" endtime="20221005 19:23:46.001"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#flash</arg>
+<arg>Your username is invalid!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221005 19:23:46.018" level="INFO">Element 'css:#flash' contains text 'Your username is invalid!'.</msg>
+<status status="PASS" starttime="20221005 19:23:46.001" endtime="20221005 19:23:46.019"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 19:23:47.020" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 19:23:46.019" endtime="20221005 19:23:47.020"/>
+</kw>
+<status status="PASS" starttime="20221005 19:23:45.550" endtime="20221005 19:23:47.020"/>
+</test>
+<test id="s1-s1-t3" name="Derde test case" line="27">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221005 19:23:47.020" endtime="20221005 19:23:47.030"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:47.030" level="INFO">Typing text 'tomsmith' into text field 'css:#username'.</msg>
+<status status="PASS" starttime="20221005 19:23:47.030" endtime="20221005 19:23:47.105"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:47.106" level="INFO">Typing text 'SuperSecretPassword!' into text field 'css:#password'.</msg>
+<status status="PASS" starttime="20221005 19:23:47.106" endtime="20221005 19:23:47.192"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.fa.fa-2x.fa-sign-in</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:47.192" level="INFO">Clicking element 'css:.fa.fa-2x.fa-sign-in'.</msg>
+<status status="PASS" starttime="20221005 19:23:47.192" endtime="20221005 19:23:47.765"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:#flash</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221005 19:23:47.784" level="INFO">Element 'css:#flash' contains text 'You logged into a secure area!'.</msg>
+<status status="PASS" starttime="20221005 19:23:47.766" endtime="20221005 19:23:47.784"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 19:23:48.789" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 19:23:47.784" endtime="20221005 19:23:48.789"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://the-internet.herokuapp.com/login</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20221005 19:23:48.789" level="INFO">Opening url 'http://the-internet.herokuapp.com/login'</msg>
+<status status="PASS" starttime="20221005 19:23:48.789" endtime="20221005 19:23:49.868"/>
+</kw>
+<status status="PASS" starttime="20221005 19:23:47.020" endtime="20221005 19:23:49.869"/>
+</test>
+<test id="s1-s1-t4" name="Vierde test case" line="36">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221005 19:23:49.870" endtime="20221005 19:23:49.889"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:49.890" level="INFO">Typing text 'tomsmith' into text field 'css:#username'.</msg>
+<status status="PASS" starttime="20221005 19:23:49.890" endtime="20221005 19:23:49.953"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:49.953" level="INFO">Typing text 'SuperSecretPassword!' into text field 'css:#password'.</msg>
+<status status="PASS" starttime="20221005 19:23:49.953" endtime="20221005 19:23:50.031"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.fa.fa-2x.fa-sign-in</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:50.032" level="INFO">Clicking element 'css:.fa.fa-2x.fa-sign-in'.</msg>
+<status status="PASS" starttime="20221005 19:23:50.031" endtime="20221005 19:23:50.311"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:.icon-2x.icon-signout</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 19:23:50.312" level="INFO">Clicking element 'css:.icon-2x.icon-signout'.</msg>
+<status status="PASS" starttime="20221005 19:23:50.312" endtime="20221005 19:23:50.599"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>css:div[class='example']</arg>
+<arg>Login Page</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221005 19:23:50.624" level="INFO">Element 'css:div[class='example']' contains text 'Login Page'.</msg>
+<status status="PASS" starttime="20221005 19:23:50.600" endtime="20221005 19:23:50.624"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 19:23:51.632" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 19:23:50.624" endtime="20221005 19:23:51.632"/>
+</kw>
+<status status="PASS" starttime="20221005 19:23:49.870" endtime="20221005 19:23:51.632"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221005 19:23:51.632" endtime="20221005 19:23:53.720"/>
+</kw>
+<status status="PASS" starttime="20221005 19:23:40.767" endtime="20221005 19:23:53.720"/>
+</suite>
+<status status="PASS" starttime="20221005 19:23:40.737" endtime="20221005 19:23:53.720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="testTemplate">Tests.testTemplate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

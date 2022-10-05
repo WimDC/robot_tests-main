@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221005 20:09:15.368" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Exercise 4\tests">
+<suite id="s1-s1" name="01 SigningTest" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Exercise 4\tests\01_SigningTest.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221005 20:09:15.618" level="INFO">Opening browser 'Google Chrome' to base url 'http://practice.automationtesting.in/'.</msg>
+<status status="PASS" starttime="20221005 20:09:15.618" endtime="20221005 20:09:32.553"/>
+</kw>
+<status status="PASS" starttime="20221005 20:09:15.618" endtime="20221005 20:09:32.554"/>
+</kw>
+<test id="s1-s1-t1" name="Login Without Email Address" line="11">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:a[href='https://practice.automationtesting.in/my-account/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:32.562" level="INFO">Clicking element 'css:a[href='https://practice.automationtesting.in/my-account/']'.</msg>
+<status status="PASS" starttime="20221005 20:09:32.560" endtime="20221005 20:09:34.523"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:35.555" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:34.545" endtime="20221005 20:09:35.555"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#password</arg>
+<arg>kakapipi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:35.557" level="INFO">Typing text 'kakapipi' into text field 'css:#password'.</msg>
+<status status="PASS" starttime="20221005 20:09:35.557" endtime="20221005 20:09:35.671"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:36.674" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:35.672" endtime="20221005 20:09:36.674"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:input[value='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:36.674" level="INFO">Clicking button 'css:input[value='Login']'.</msg>
+<status status="PASS" starttime="20221005 20:09:36.674" endtime="20221005 20:09:37.727"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:38.732" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:37.728" endtime="20221005 20:09:38.732"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css:ul[class='woocommerce-error']</arg>
+<arg>Error: Username is required.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221005 20:09:38.735" level="INFO">Verifying element 'css:ul[class='woocommerce-error']' contains exact text 'Error: Username is required.'.</msg>
+<status status="PASS" starttime="20221005 20:09:38.732" endtime="20221005 20:09:38.755"/>
+</kw>
+<status status="PASS" starttime="20221005 20:09:32.556" endtime="20221005 20:09:38.755"/>
+</test>
+<test id="s1-s1-t2" name="Login With Unexisting Account" line="20">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:a[href='https://practice.automationtesting.in/my-account/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:38.755" level="INFO">Clicking element 'css:a[href='https://practice.automationtesting.in/my-account/']'.</msg>
+<status status="PASS" starttime="20221005 20:09:38.755" endtime="20221005 20:09:40.582"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:41.590" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:40.583" endtime="20221005 20:09:41.590"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<arg>pipidoodoo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:41.591" level="INFO">Typing text 'pipidoodoo' into text field 'css:#username'.</msg>
+<status status="PASS" starttime="20221005 20:09:41.591" endtime="20221005 20:09:41.689"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:42.701" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:41.690" endtime="20221005 20:09:42.701"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#password</arg>
+<arg>kakapipi</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:42.702" level="INFO">Typing text 'kakapipi' into text field 'css:#password'.</msg>
+<status status="PASS" starttime="20221005 20:09:42.701" endtime="20221005 20:09:42.787"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:43.790" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:42.787" endtime="20221005 20:09:43.790"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:input[value='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:43.792" level="INFO">Clicking button 'css:input[value='Login']'.</msg>
+<status status="PASS" starttime="20221005 20:09:43.791" endtime="20221005 20:09:44.902"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:45.911" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:44.903" endtime="20221005 20:09:45.911"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css:ul[class='woocommerce-error']</arg>
+<arg>Error: the username pipidoodoo is not registered on this site. If you are unsure of your username, try your email address instead.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221005 20:09:45.911" level="INFO">Verifying element 'css:ul[class='woocommerce-error']' contains exact text 'Error: the username pipidoodoo is not registered on this site. If you are unsure of your username, try your email address instead.'.</msg>
+<status status="PASS" starttime="20221005 20:09:45.911" endtime="20221005 20:09:45.931"/>
+</kw>
+<status status="PASS" starttime="20221005 20:09:38.755" endtime="20221005 20:09:45.931"/>
+</test>
+<test id="s1-s1-t3" name="Login Without Password" line="31">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:a[href='https://practice.automationtesting.in/my-account/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:45.931" level="INFO">Clicking element 'css:a[href='https://practice.automationtesting.in/my-account/']'.</msg>
+<status status="PASS" starttime="20221005 20:09:45.931" endtime="20221005 20:09:47.688"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:48.697" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:47.689" endtime="20221005 20:09:48.697"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#username</arg>
+<arg>pipidoodoo</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:48.699" level="INFO">Typing text 'pipidoodoo' into text field 'css:#username'.</msg>
+<status status="PASS" starttime="20221005 20:09:48.698" endtime="20221005 20:09:48.783"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:49.795" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:48.783" endtime="20221005 20:09:49.795"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:input[value='Login']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221005 20:09:49.795" level="INFO">Clicking button 'css:input[value='Login']'.</msg>
+<status status="PASS" starttime="20221005 20:09:49.795" endtime="20221005 20:09:51.247"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:09:52.249" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:09:51.247" endtime="20221005 20:09:52.249"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css:ul[class='woocommerce-error']</arg>
+<arg>Error: Password is required.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221005 20:09:52.250" level="INFO">Verifying element 'css:ul[class='woocommerce-error']' contains exact text 'Error: Password is required.'.</msg>
+<status status="PASS" starttime="20221005 20:09:52.250" endtime="20221005 20:09:52.296"/>
+</kw>
+<status status="PASS" starttime="20221005 20:09:45.931" endtime="20221005 20:09:52.306"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221005 20:09:52.311" endtime="20221005 20:09:54.546"/>
+</kw>
+<status status="PASS" starttime="20221005 20:09:15.399" endtime="20221005 20:09:54.546"/>
+</suite>
+<suite id="s1-s2" name="02 RegisterTest" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Exercise 4\tests\02_RegisterTest.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221005 20:09:54.566" level="INFO">Opening browser 'Google Chrome' to base url 'http://practice.automationtesting.in/'.</msg>
+<status status="PASS" starttime="20221005 20:09:54.566" endtime="20221005 20:10:02.147"/>
+</kw>
+<status status="PASS" starttime="20221005 20:09:54.566" endtime="20221005 20:10:02.147"/>
+</kw>
+<test id="s1-s2-t1" name="Register without email" line="11">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:a[href='https://practice.automationtesting.in/my-account/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 20:10:02.148" level="INFO">Clicking element 'css:a[href='https://practice.automationtesting.in/my-account/']'.</msg>
+<status status="PASS" starttime="20221005 20:10:02.148" endtime="20221005 20:10:03.913"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:04.919" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:03.914" endtime="20221005 20:10:04.919"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#reg_password</arg>
+<arg>Register12345678!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 20:10:04.919" level="INFO">Typing text 'Register12345678!' into text field 'css:#reg_password'.</msg>
+<status status="PASS" starttime="20221005 20:10:04.919" endtime="20221005 20:10:05.067"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:06.074" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:05.068" endtime="20221005 20:10:06.074"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:input[value='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 20:10:06.074" level="INFO">Clicking element 'css:input[value='Register']'.</msg>
+<status status="PASS" starttime="20221005 20:10:06.074" endtime="20221005 20:10:07.446"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:08.449" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:07.447" endtime="20221005 20:10:08.449"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css:ul[class='woocommerce-error'] li</arg>
+<arg>Error: Please provide a valid email address.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221005 20:10:08.449" level="INFO">Verifying element 'css:ul[class='woocommerce-error'] li' contains exact text 'Error: Please provide a valid email address.'.</msg>
+<status status="PASS" starttime="20221005 20:10:08.449" endtime="20221005 20:10:08.469"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:09.480" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:08.469" endtime="20221005 20:10:09.480"/>
+</kw>
+<status status="PASS" starttime="20221005 20:10:02.147" endtime="20221005 20:10:09.480"/>
+</test>
+<test id="s1-s2-t2" name="Register without password" line="21">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:a[href='https://practice.automationtesting.in/my-account/']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 20:10:09.480" level="INFO">Clicking element 'css:a[href='https://practice.automationtesting.in/my-account/']'.</msg>
+<status status="PASS" starttime="20221005 20:10:09.480" endtime="20221005 20:10:10.534"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:11.538" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:10.535" endtime="20221005 20:10:11.538"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css:#reg_email</arg>
+<arg>DangerZoner69@hetemail.kom</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 20:10:11.538" level="INFO">Typing text 'DangerZoner69@hetemail.kom' into text field 'css:#reg_email'.</msg>
+<status status="PASS" starttime="20221005 20:10:11.538" endtime="20221005 20:10:11.638"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:12.647" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:11.639" endtime="20221005 20:10:12.647"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css:input[value='Register']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221005 20:10:12.647" level="INFO">Clicking element 'css:input[value='Register']'.</msg>
+<status status="PASS" starttime="20221005 20:10:12.647" endtime="20221005 20:10:13.978"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:14.988" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:13.979" endtime="20221005 20:10:14.988"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>css:ul[class='woocommerce-error'] li</arg>
+<arg>Error: Please enter an account password.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20221005 20:10:14.988" level="INFO">Verifying element 'css:ul[class='woocommerce-error'] li' contains exact text 'Error: Please enter an account password.'.</msg>
+<status status="PASS" starttime="20221005 20:10:14.988" endtime="20221005 20:10:15.014"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221005 20:10:16.017" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221005 20:10:15.014" endtime="20221005 20:10:16.017"/>
+</kw>
+<status status="PASS" starttime="20221005 20:10:09.480" endtime="20221005 20:10:16.017"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221005 20:10:16.017" endtime="20221005 20:10:18.142"/>
+</kw>
+<status status="PASS" starttime="20221005 20:09:54.546" endtime="20221005 20:10:18.142"/>
+</suite>
+<status status="PASS" starttime="20221005 20:09:15.368" endtime="20221005 20:10:18.142"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="01 SigningTest">Tests.01 SigningTest</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s2" name="02 RegisterTest">Tests.02 RegisterTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
