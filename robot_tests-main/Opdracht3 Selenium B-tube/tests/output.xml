@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221005 22:02:19.726" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Opdracht3 Selenium B-tube\tests">
+<suite id="s1-s1" name="Selenium" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Opdracht3 Selenium B-tube\tests\selenium.robot">
+<kw name="Open My Website" library="basePage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221005 22:02:19.992" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221005 22:02:19.992" endtime="20221005 22:02:21.894"/>
+</kw>
+<status status="PASS" starttime="20221005 22:02:19.992" endtime="20221005 22:02:21.894"/>
+</kw>
+<test id="s1-s1-t1" name="1.De zoekbalk helpt om een film op te zoeken" line="11">
+<status status="FAIL" starttime="20221005 22:02:21.894" endtime="20221005 22:02:21.896">Test contains no keywords.</status>
+</test>
+<test id="s1-s1-t2" name="2.Je kan horizontaal door genres scrollen" line="13">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221005 22:02:21.898" endtime="20221005 22:02:22.027"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@id='Comedy Movies']//div[@class='css-nlgfro']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221005 22:02:22.027" endtime="20221005 22:02:22.239"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@id='mui-83534']</arg>
+<arg>Aladdin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221005 22:02:22.249" level="INFO">Typing text 'Aladdin' into text field '//input[@id='mui-83534']'.</msg>
+<msg timestamp="20221005 22:02:22.986" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221005 22:02:22.988" level="FAIL">Element with locator '//input[@id='mui-83534']' not found.</msg>
+<status status="FAIL" starttime="20221005 22:02:22.239" endtime="20221005 22:02:22.993"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221005 22:02:22.995" endtime="20221005 22:02:22.995"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>//div[@id='Comedy Movies']//div[@class='css-nlgfro']</arg>
+<arg>50</arg>
+<arg>50</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<status status="NOT RUN" starttime="20221005 22:02:22.996" endtime="20221005 22:02:22.996"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221005 22:02:22.997" endtime="20221005 22:02:22.997"/>
+</kw>
+<status status="FAIL" starttime="20221005 22:02:21.897" endtime="20221005 22:02:22.998">Element with locator '//input[@id='mui-83534']' not found.</status>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221005 22:02:23.002" endtime="20221005 22:02:25.137"/>
+</kw>
+<status status="FAIL" starttime="20221005 22:02:19.755" endtime="20221005 22:02:25.137"/>
+</suite>
+<status status="FAIL" starttime="20221005 22:02:19.726" endtime="20221005 22:02:25.137"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Selenium">Tests.Selenium</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
