@@ -1,186 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221012 21:40:28.269" rpa="false" schemaversion="3">
-<suite id="s1" name="Tests" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Opdracht3 Selenium B-tube\tests">
-<suite id="s1-s1" name="Selenium" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Opdracht3 Selenium B-tube\tests\selenium.robot">
-<kw name="Open My Website" library="basePage" type="SETUP">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221016 21:48:11.604" rpa="false" schemaversion="3">
+<suite id="s1" name="Film Huren" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Opdracht3 Selenium B-tube\tests\film_huren.robot">
+<kw name="Open My Website and login" library="basePage" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221012 21:40:28.582" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
-<status status="PASS" starttime="20221012 21:40:28.582" endtime="20221012 21:40:31.099"/>
+<msg timestamp="20221016 21:48:11.821" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221016 21:48:11.821" endtime="20221016 21:48:13.355"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1680</arg>
 <arg>1050</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20221012 21:40:31.099" endtime="20221012 21:40:31.217"/>
+<status status="PASS" starttime="20221016 21:48:13.355" endtime="20221016 21:48:13.470"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221012 21:40:41.234" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20221012 21:40:31.217" endtime="20221012 21:40:41.234"/>
+<msg timestamp="20221016 21:48:23.475" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221016 21:48:13.470" endtime="20221016 21:48:23.475"/>
 </kw>
-<status status="PASS" starttime="20221012 21:40:28.582" endtime="20221012 21:40:41.234"/>
-</kw>
-<test id="s1-s1-t1" name="1. Een profiel toon de correcte voor- en achternaam" line="11">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css:#SignInButton.css-ixez3h</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 21:40:41.236" level="INFO">Clicking element 'css:#SignInButton.css-ixez3h'.</msg>
-<status status="PASS" starttime="20221012 21:40:41.236" endtime="20221012 21:40:41.311"/>
+<msg timestamp="20221016 21:48:23.475" level="INFO">Clicking element 'css:#SignInButton.css-ixez3h'.</msg>
+<status status="PASS" starttime="20221016 21:48:23.475" endtime="20221016 21:48:23.534"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221012 21:40:42.322" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221012 21:40:41.311" endtime="20221012 21:40:42.322"/>
+<msg timestamp="20221016 21:48:24.545" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221016 21:48:23.534" endtime="20221016 21:48:24.545"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css:#SignInEmail</arg>
 <arg>decuyperwim@hotmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 21:40:42.323" level="INFO">Typing text 'decuyperwim@hotmail.com' into text field 'css:#SignInEmail'.</msg>
-<status status="PASS" starttime="20221012 21:40:42.322" endtime="20221012 21:40:42.419"/>
+<msg timestamp="20221016 21:48:24.545" level="INFO">Typing text 'decuyperwim@hotmail.com' into text field 'css:#SignInEmail'.</msg>
+<status status="PASS" starttime="20221016 21:48:24.545" endtime="20221016 21:48:24.624"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css:#SignInPassword</arg>
 <arg>abc123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 21:40:42.420" level="INFO">Typing text 'abc123' into text field 'css:#SignInPassword'.</msg>
-<status status="PASS" starttime="20221012 21:40:42.420" endtime="20221012 21:40:42.490"/>
+<msg timestamp="20221016 21:48:24.624" level="INFO">Typing text 'abc123' into text field 'css:#SignInPassword'.</msg>
+<status status="PASS" starttime="20221016 21:48:24.624" endtime="20221016 21:48:24.696"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css:#SignInButtonComplete</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 21:40:42.490" level="INFO">Clicking element 'css:#SignInButtonComplete'.</msg>
-<status status="PASS" starttime="20221012 21:40:42.490" endtime="20221012 21:40:42.532"/>
+<msg timestamp="20221016 21:48:24.696" level="INFO">Clicking element 'css:#SignInButtonComplete'.</msg>
+<status status="PASS" starttime="20221016 21:48:24.696" endtime="20221016 21:48:24.746"/>
+</kw>
+<status status="PASS" starttime="20221016 21:48:11.821" endtime="20221016 21:48:24.746"/>
+</kw>
+<test id="s1-t1" name="3. Na het huren van een film, komt het in de lijst met gehuurde films" line="13">
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221016 21:48:29.760" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221016 21:48:24.748" endtime="20221016 21:48:29.760"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder="Search.."][@type="text"]</arg>
+<arg>aladdin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221016 21:48:29.761" level="INFO">Typing text 'aladdin' into text field '//input[@placeholder="Search.."][@type="text"]'.</msg>
+<status status="PASS" starttime="20221016 21:48:29.760" endtime="20221016 21:48:29.864"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221012 21:40:44.541" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221012 21:40:42.533" endtime="20221012 21:40:44.541"/>
+<msg timestamp="20221016 21:48:30.869" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221016 21:48:29.864" endtime="20221016 21:48:30.869"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>css:body &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; header:nth-child(3) &gt; div:nth-child(4) &gt; a:nth-child(2) &gt; button:nth-child(1)</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 21:40:44.542" level="INFO">Clicking element 'css:body &gt; div:nth-child(2) &gt; div:nth-child(1) &gt; div:nth-child(2) &gt; header:nth-child(3) &gt; div:nth-child(4) &gt; a:nth-child(2) &gt; button:nth-child(1)'.</msg>
-<status status="PASS" starttime="20221012 21:40:44.542" endtime="20221012 21:40:44.598"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221012 21:40:46.607" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20221012 21:40:44.599" endtime="20221012 21:40:46.607"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//p[@class='css-cpr2ex'][1]</arg>
-<arg>wim</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20221012 21:40:46.608" level="INFO">Verifying element '//p[@class='css-cpr2ex'][1]' contains exact text 'wim'.</msg>
-<status status="PASS" starttime="20221012 21:40:46.607" endtime="20221012 21:40:46.640"/>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<arg>//div[@class='css-kcntxh']/p[@class='css-cpr2ex'][1]</arg>
-<arg>de cuyper</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<msg timestamp="20221012 21:40:46.641" level="INFO">Verifying element '//div[@class='css-kcntxh']/p[@class='css-cpr2ex'][1]' contains exact text 'de cuyper'.</msg>
-<status status="PASS" starttime="20221012 21:40:46.641" endtime="20221012 21:40:46.660"/>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${searchbarmovie}</arg>
+<arg>ARROW_DOWN</arg>
+<arg>RETURN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20221016 21:48:30.869" level="INFO">Sending key(s) ('ARROW_DOWN', 'RETURN') to //input[@placeholder="Search.."][@type="text"] element.</msg>
+<msg timestamp="20221016 21:48:31.146" level="INFO">Pressing special key ARROW_DOWN to element.</msg>
+<msg timestamp="20221016 21:48:31.146" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<msg timestamp="20221016 21:48:31.151" level="INFO">Pressing special key RETURN to element.</msg>
+<msg timestamp="20221016 21:48:31.151" level="INFO">Releasing special key RETURN.</msg>
+<status status="PASS" starttime="20221016 21:48:30.869" endtime="20221016 21:48:31.179"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221012 21:40:51.663" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221012 21:40:46.661" endtime="20221012 21:40:51.663"/>
+<msg timestamp="20221016 21:48:36.182" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221016 21:48:31.180" endtime="20221016 21:48:36.182"/>
 </kw>
-<status status="PASS" starttime="20221012 21:40:41.235" endtime="20221012 21:40:51.664"/>
-</test>
-<test id="s1-s1-t2" name="2. Inloggen geef juiste feedback (meerdere cases)" line="24">
-<status status="FAIL" starttime="20221012 21:40:51.665" endtime="20221012 21:40:51.667">Test contains no keywords.</status>
-</test>
-<test id="s1-s1-t3" name="3. Na het inloggen, kom je op de juiste pagina terecht" line="26">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>css:#SignInButton.css-ixez3h</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 21:40:51.669" level="INFO">Clicking element 'css:#SignInButton.css-ixez3h'.</msg>
-<msg timestamp="20221012 21:40:52.165" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221012 21:40:52.165" level="FAIL">Element with locator 'css:#SignInButton.css-ixez3h' not found.</msg>
-<status status="FAIL" starttime="20221012 21:40:51.669" endtime="20221012 21:40:52.229"/>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>//div[@class='css-rabwp9']</arg>
+<arg>Aladdin</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20221016 21:48:36.204" level="INFO">Element '//div[@class='css-rabwp9']' contains text 'Aladdin'.</msg>
+<status status="PASS" starttime="20221016 21:48:36.183" endtime="20221016 21:48:36.204"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221012 21:40:52.229" endtime="20221012 21:40:52.230"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>css:#SignInEmail</arg>
-<arg>decuyperwim@hotmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221012 21:40:52.230" endtime="20221012 21:40:52.230"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>css:#SignInPassword</arg>
-<arg>abc123</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221012 21:40:52.231" endtime="20221012 21:40:52.231"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>css:#SignInButtonComplete</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221012 21:40:52.231" endtime="20221012 21:40:52.231"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" starttime="20221012 21:40:52.232" endtime="20221012 21:40:52.232"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>css:div[role='combobox']</arg>
-<doc>Waits until the element ``locator`` is visible.</doc>
-<status status="NOT RUN" starttime="20221012 21:40:52.233" endtime="20221012 21:40:52.233"/>
-</kw>
-<status status="FAIL" starttime="20221012 21:40:51.668" endtime="20221012 21:40:52.233">Element with locator 'css:#SignInButton.css-ixez3h' not found.</status>
+<status status="PASS" starttime="20221016 21:48:24.747" endtime="20221016 21:48:36.205"/>
 </test>
-<test id="s1-s1-t4" name="4. Na het huren van een film, komt het in de lijst met gehuurde films" line="35">
-<status status="FAIL" starttime="20221012 21:40:52.235" endtime="20221012 21:40:52.236">Test contains no keywords.</status>
+<test id="s1-t2" name="4. Na het huren van een film, dalen de credits met de juiste waarde" line="21">
+<status status="FAIL" starttime="20221016 21:48:36.206" endtime="20221016 21:48:36.207">Test contains no keywords.</status>
 </test>
-<test id="s1-s1-t5" name="5. Na het huren van een film, dalen de credits met de juiste waarde" line="36">
-<status status="FAIL" starttime="20221012 21:40:52.238" endtime="20221012 21:40:52.239">Test contains no keywords.</status>
+<test id="s1-t3" name="7. De zoekbalk helpt om een film op te zoeken" line="23">
+<status status="FAIL" starttime="20221016 21:48:36.208" endtime="20221016 21:48:36.209">Test contains no keywords.</status>
 </test>
-<test id="s1-s1-t6" name="6. Negatieve credits kunnen niet aangekocht worden" line="37">
-<status status="FAIL" starttime="20221012 21:40:52.240" endtime="20221012 21:40:52.241">Test contains no keywords.</status>
-</test>
-<test id="s1-s1-t7" name="7. Een profiel heeft een avatar" line="38">
-<status status="FAIL" starttime="20221012 21:40:52.243" endtime="20221012 21:40:52.244">Test contains no keywords.</status>
-</test>
-<test id="s1-s1-t8" name="8. De zoekbalk helpt om een film op te zoeken" line="39">
-<status status="FAIL" starttime="20221012 21:40:52.245" endtime="20221012 21:40:52.247">Test contains no keywords.</status>
-</test>
-<test id="s1-s1-t9" name="9. Je kan horizontaal door genres scrollen" line="40">
-<status status="FAIL" starttime="20221012 21:40:52.248" endtime="20221012 21:40:52.249">Test contains no keywords.</status>
-</test>
-<test id="s1-s1-t10" name="10. De zoekbalk vult resultaten aan" line="41">
-<status status="FAIL" starttime="20221012 21:40:52.251" endtime="20221012 21:40:52.252">Test contains no keywords.</status>
+<test id="s1-t4" name="10. De zoekbalk vult resultaten aan" line="25">
+<status status="FAIL" starttime="20221016 21:48:36.210" endtime="20221016 21:48:36.210">Test contains no keywords.</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221012 21:40:52.254" endtime="20221012 21:40:54.493"/>
+<status status="PASS" starttime="20221016 21:48:36.211" endtime="20221016 21:48:38.323"/>
 </kw>
-<status status="FAIL" starttime="20221012 21:40:28.298" endtime="20221012 21:40:54.493"/>
-</suite>
-<status status="FAIL" starttime="20221012 21:40:28.271" endtime="20221012 21:40:54.496"/>
+<status status="FAIL" starttime="20221016 21:48:11.604" endtime="20221016 21:48:38.323"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="9" skip="0">All Tests</stat>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="9" skip="0" id="s1" name="Tests">Tests</stat>
-<stat pass="1" fail="9" skip="0" id="s1-s1" name="Selenium">Tests.Selenium</stat>
+<stat pass="1" fail="3" skip="0" id="s1" name="Film Huren">Film Huren</stat>
 </suite>
 </statistics>
 <errors>
