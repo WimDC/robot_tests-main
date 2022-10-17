@@ -1,130 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221016 21:48:11.604" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221017 18:34:48.107" rpa="false" schemaversion="3">
 <suite id="s1" name="Film Huren" source="C:\Users\WimDeCuyperDigitOffi\IdeaProjects\robot_tests-main\robot_tests-main\Opdracht3 Selenium B-tube\tests\film_huren.robot">
 <kw name="Open My Website and login" library="basePage" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221016 21:48:11.821" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
-<status status="PASS" starttime="20221016 21:48:11.821" endtime="20221016 21:48:13.355"/>
+<msg timestamp="20221017 18:34:48.308" level="INFO">Opening browser 'Google Chrome' to base url 'https://brightshopapp.herokuapp.com/#/'.</msg>
+<status status="PASS" starttime="20221017 18:34:48.308" endtime="20221017 18:34:49.744"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1680</arg>
 <arg>1050</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20221016 21:48:13.355" endtime="20221016 21:48:13.470"/>
+<status status="PASS" starttime="20221017 18:34:49.744" endtime="20221017 18:34:49.859"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221016 21:48:23.475" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20221016 21:48:13.470" endtime="20221016 21:48:23.475"/>
+<msg timestamp="20221017 18:34:59.871" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20221017 18:34:49.859" endtime="20221017 18:34:59.871"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css:#SignInButton.css-ixez3h</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221016 21:48:23.475" level="INFO">Clicking element 'css:#SignInButton.css-ixez3h'.</msg>
-<status status="PASS" starttime="20221016 21:48:23.475" endtime="20221016 21:48:23.534"/>
+<msg timestamp="20221017 18:34:59.871" level="INFO">Clicking element 'css:#SignInButton.css-ixez3h'.</msg>
+<status status="PASS" starttime="20221017 18:34:59.871" endtime="20221017 18:34:59.928"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221016 21:48:24.545" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221016 21:48:23.534" endtime="20221016 21:48:24.545"/>
+<msg timestamp="20221017 18:35:00.933" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20221017 18:34:59.928" endtime="20221017 18:35:00.933"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css:#SignInEmail</arg>
 <arg>decuyperwim@hotmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221016 21:48:24.545" level="INFO">Typing text 'decuyperwim@hotmail.com' into text field 'css:#SignInEmail'.</msg>
-<status status="PASS" starttime="20221016 21:48:24.545" endtime="20221016 21:48:24.624"/>
+<msg timestamp="20221017 18:35:00.933" level="INFO">Typing text 'decuyperwim@hotmail.com' into text field 'css:#SignInEmail'.</msg>
+<status status="PASS" starttime="20221017 18:35:00.933" endtime="20221017 18:35:01.027"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>css:#SignInPassword</arg>
 <arg>abc123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221016 21:48:24.624" level="INFO">Typing text 'abc123' into text field 'css:#SignInPassword'.</msg>
-<status status="PASS" starttime="20221016 21:48:24.624" endtime="20221016 21:48:24.696"/>
+<msg timestamp="20221017 18:35:01.028" level="INFO">Typing text 'abc123' into text field 'css:#SignInPassword'.</msg>
+<status status="PASS" starttime="20221017 18:35:01.027" endtime="20221017 18:35:01.097"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>css:#SignInButtonComplete</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221016 21:48:24.696" level="INFO">Clicking element 'css:#SignInButtonComplete'.</msg>
-<status status="PASS" starttime="20221016 21:48:24.696" endtime="20221016 21:48:24.746"/>
+<msg timestamp="20221017 18:35:01.097" level="INFO">Clicking element 'css:#SignInButtonComplete'.</msg>
+<status status="PASS" starttime="20221017 18:35:01.097" endtime="20221017 18:35:01.137"/>
 </kw>
-<status status="PASS" starttime="20221016 21:48:11.821" endtime="20221016 21:48:24.746"/>
+<status status="PASS" starttime="20221017 18:34:48.308" endtime="20221017 18:35:01.137"/>
 </kw>
 <test id="s1-t1" name="3. Na het huren van een film, komt het in de lijst met gehuurde films" line="13">
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221016 21:48:29.760" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221016 21:48:24.748" endtime="20221016 21:48:29.760"/>
+<msg timestamp="20221017 18:35:06.157" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221017 18:35:01.139" endtime="20221017 18:35:06.157"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>//input[@placeholder="Search.."][@type="text"]</arg>
 <arg>aladdin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221016 21:48:29.761" level="INFO">Typing text 'aladdin' into text field '//input[@placeholder="Search.."][@type="text"]'.</msg>
-<status status="PASS" starttime="20221016 21:48:29.760" endtime="20221016 21:48:29.864"/>
+<msg timestamp="20221017 18:35:06.157" level="INFO">Typing text 'aladdin' into text field '//input[@placeholder="Search.."][@type="text"]'.</msg>
+<msg timestamp="20221017 18:35:06.824" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-83.png"&gt;&lt;img src="selenium-screenshot-83.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221017 18:35:06.824" level="FAIL">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0040DF13+2219795]
+	Ordinal0 [0x003A2841+1779777]
+	Ordinal0 [0x002B423D+803389]
+	Ordinal0 [0x002B6D04+814340]
+	Ordinal0 [0x002B6BC2+814018]
+	Ordinal0 [0x002B6E50+814672]
+	Ordinal0 [0x002DB5A1+964001]
+	Ordinal0 [0x002FE7FC+1107964]
+	Ordinal0 [0x002D94B4+955572]
+	Ordinal0 [0x002FEA14+1108500]
+	Ordinal0 [0x0030F192+1175954]
+	Ordinal0 [0x002FE616+1107478]
+	Ordinal0 [0x002D7F89+950153]
+	Ordinal0 [0x002D8F56+954198]
+	GetHandleVerifier [0x00702CB2+3040210]
+	GetHandleVerifier [0x006F2BB4+2974420]
+	GetHandleVerifier [0x004A6A0A+565546]
+	GetHandleVerifier [0x004A5680+560544]
+	Ordinal0 [0x003A9A5C+1808988]
+	Ordinal0 [0x003AE3A8+1827752]
+	Ordinal0 [0x003AE495+1827989]
+	Ordinal0 [0x003B80A4+1867940]
+	BaseThreadInitThunk [0x762FFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77E57BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E57B8E+238]
+</msg>
+<status status="FAIL" starttime="20221017 18:35:06.157" endtime="20221017 18:35:06.879"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221016 21:48:30.869" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20221016 21:48:29.864" endtime="20221016 21:48:30.869"/>
+<status status="NOT RUN" starttime="20221017 18:35:06.879" endtime="20221017 18:35:06.879"/>
 </kw>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${searchbarmovie}</arg>
 <arg>ARROW_DOWN</arg>
 <arg>RETURN</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20221016 21:48:30.869" level="INFO">Sending key(s) ('ARROW_DOWN', 'RETURN') to //input[@placeholder="Search.."][@type="text"] element.</msg>
-<msg timestamp="20221016 21:48:31.146" level="INFO">Pressing special key ARROW_DOWN to element.</msg>
-<msg timestamp="20221016 21:48:31.146" level="INFO">Releasing special key ARROW_DOWN.</msg>
-<msg timestamp="20221016 21:48:31.151" level="INFO">Pressing special key RETURN to element.</msg>
-<msg timestamp="20221016 21:48:31.151" level="INFO">Releasing special key RETURN.</msg>
-<status status="PASS" starttime="20221016 21:48:30.869" endtime="20221016 21:48:31.179"/>
+<status status="NOT RUN" starttime="20221017 18:35:06.879" endtime="20221017 18:35:06.879"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221016 21:48:36.182" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20221016 21:48:31.180" endtime="20221016 21:48:36.182"/>
+<status status="NOT RUN" starttime="20221017 18:35:06.879" endtime="20221017 18:35:06.879"/>
 </kw>
 <kw name="Element Should Contain" library="SeleniumLibrary">
 <arg>//div[@class='css-rabwp9']</arg>
 <arg>Aladdin</arg>
 <doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20221016 21:48:36.204" level="INFO">Element '//div[@class='css-rabwp9']' contains text 'Aladdin'.</msg>
-<status status="PASS" starttime="20221016 21:48:36.183" endtime="20221016 21:48:36.204"/>
+<status status="NOT RUN" starttime="20221017 18:35:06.879" endtime="20221017 18:35:06.879"/>
 </kw>
-<status status="PASS" starttime="20221016 21:48:24.747" endtime="20221016 21:48:36.205"/>
+<status status="FAIL" starttime="20221017 18:35:01.138" endtime="20221017 18:35:06.879">InvalidElementStateException: Message: invalid element state: Element is not currently interactable and may not be manipulated
+  (Session info: chrome=106.0.5249.119)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x0040DF13+2219795]
+	Ordinal0 [0x003A2841+1779777]
+	Ordinal0 [0x002B423D+803389]
+	Ordinal0 [0x002B6D04+814340]
+	Ordinal0 [0x002B6BC2+814018]
+	Ordinal0 [0x002B6E50+814672]
+	Ordinal0 [0x002DB5A1+964001]
+	Ordinal0 [0x002FE7FC+1107964]
+	Ordinal0 [0x002D94B4+955572]
+	Ordinal0 [0x002FEA14+1108500]
+	Ordinal0 [0x0030F192+1175954]
+	Ordinal0 [0x002FE616+1107478]
+	Ordinal0 [0x002D7F89+950153]
+	Ordinal0 [0x002D8F56+954198]
+	GetHandleVerifier [0x00702CB2+3040210]
+	GetHandleVerifier [0x006F2BB4+2974420]
+	GetHandleVerifier [0x004A6A0A+565546]
+	GetHandleVerifier [0x004A5680+560544]
+	Ordinal0 [0x003A9A5C+1808988]
+	Ordinal0 [0x003AE3A8+1827752]
+	Ordinal0 [0x003AE495+1827989]
+	Ordinal0 [0x003B80A4+1867940]
+	BaseThreadInitThunk [0x762FFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77E57BBE+286]
+	RtlGetAppContainerNamedObjectPath [0x77E57B8E+238]
+</status>
 </test>
 <test id="s1-t2" name="4. Na het huren van een film, dalen de credits met de juiste waarde" line="21">
-<status status="FAIL" starttime="20221016 21:48:36.206" endtime="20221016 21:48:36.207">Test contains no keywords.</status>
+<status status="FAIL" starttime="20221017 18:35:06.879" endtime="20221017 18:35:06.879">Test contains no keywords.</status>
 </test>
 <test id="s1-t3" name="7. De zoekbalk helpt om een film op te zoeken" line="23">
-<status status="FAIL" starttime="20221016 21:48:36.208" endtime="20221016 21:48:36.209">Test contains no keywords.</status>
+<status status="FAIL" starttime="20221017 18:35:06.879" endtime="20221017 18:35:06.879">Test contains no keywords.</status>
 </test>
 <test id="s1-t4" name="10. De zoekbalk vult resultaten aan" line="25">
-<status status="FAIL" starttime="20221016 21:48:36.210" endtime="20221016 21:48:36.210">Test contains no keywords.</status>
+<status status="FAIL" starttime="20221017 18:35:06.879" endtime="20221017 18:35:06.879">Test contains no keywords.</status>
 </test>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221016 21:48:36.211" endtime="20221016 21:48:38.323"/>
+<status status="PASS" starttime="20221017 18:35:06.879" endtime="20221017 18:35:08.980"/>
 </kw>
-<status status="FAIL" starttime="20221016 21:48:11.604" endtime="20221016 21:48:38.323"/>
+<status status="FAIL" starttime="20221017 18:34:48.107" endtime="20221017 18:35:08.980"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="3" skip="0">All Tests</stat>
+<stat pass="0" fail="4" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="3" skip="0" id="s1" name="Film Huren">Film Huren</stat>
+<stat pass="0" fail="4" skip="0" id="s1" name="Film Huren">Film Huren</stat>
 </suite>
 </statistics>
 <errors>
