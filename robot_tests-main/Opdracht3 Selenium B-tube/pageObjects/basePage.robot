@@ -25,4 +25,4 @@ Buy Credits
     Click Element    //button[@class='css-1e9674f']
     Input Text    //input[@placeholder='5']    10
     Click Element    //button[@type='submit']
-    Click Element    //img[@id='Logo']
+    Click Element    ${homepage}

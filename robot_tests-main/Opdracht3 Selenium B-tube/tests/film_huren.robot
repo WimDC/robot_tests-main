@@ -34,9 +34,6 @@ ${xbuttonmovietrailer}=     //*[@id="CloseModal"]
     Click Button  ${xbuttonmovietrailer}
 
 4. Na het huren van een film, dalen de credits met de juiste waarde
-
-
-3. Na het huren van een film, komt het in de lijst met gehuurde films
     Buy Credits
     sleep  3s
     Input Text    ${searchbarmovie}    ${movietorent}
@@ -46,6 +43,8 @@ ${xbuttonmovietrailer}=     //*[@id="CloseModal"]
     Element Should Contain  //div[@class='css-rabwp9']  ${movietorent}
     Sleep  2s
     Click Button  //button[@id='RentMovieButton']
+
+3. Na het huren van een film, komt het in de lijst met gehuurde films
     sleep  2s
     Click Element    //a[@href='#/orders']//button[@id='OrdersPageButton']
     sleep  2s
