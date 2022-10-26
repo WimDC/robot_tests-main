@@ -20,9 +20,10 @@ Open My Website and login
     Click Element    css:#SignInButtonComplete
 
 Buy Credits
-    Click Element    //a[@href='#/profile']//button[@id='OrdersPageButton']
+    Click Element    ${profilepage}
     sleep  2s
     Click Element    //button[@class='css-1e9674f']
-    Input Text    //input[@placeholder='5']    10
+    Input Text    //input[@placeholder='5']    5
     Click Element    //button[@type='submit']
+    sleep  2s
     Click Element    ${homepage}
